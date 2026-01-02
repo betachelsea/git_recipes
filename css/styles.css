@@ -52,6 +52,9 @@ section{
 
 h2{
   font-size: 18px;
+  margin: 0 0 10px;
+  padding-left: 10px;
+  border-left: 4px solid #d97706;
 }
 
 /* ========== lists ========== */
@@ -201,6 +204,7 @@ article.index .lead {
   margin: 0 0 6px;
   font-size: 18px;
   padding-left: 0;
+  border-left: none; /* 既存h2装飾を無効化 */
 }
 
 .recipe-list p {
