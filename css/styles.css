@@ -1,0 +1,180 @@
+/* styles.css - simple & clean recipe layout */
+
+:root{
+  --bg: #fafafa;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP",
+               "Hiragino Sans", "Yu Gothic", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+}
+
+/* ========== layout ========== */
+article{
+  width: min(860px, 92vw);
+  margin: 40px auto;
+  padding: 28px 26px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+/* ========== typography ========== */
+h1{
+  margin: 0 0 10px;
+  font-size: 28px;
+  letter-spacing: .02em;
+}
+
+p{ margin: 10px 0; }
+
+section{
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+h2{
+  font-size: 18px;
+}
+
+/* ========== lists ========== */
+ul, ol{
+  margin: 10px 0 0;
+  padding-left: 1.25em;
+}
+
+li{ margin: 6px 0; }
+
+ol li::marker{
+  font-weight: 650;
+}
+
+b{ font-weight: 650; }
+
+/* ========== ingredients ========== */
+/* メイン材料 */
+section.ingredients > ul > li{
+  font-weight: 500;
+}
+
+/* ☆付き材料 */
+section.ingredients li.star::before{
+  content: "★";
+  color: #eab308;
+  font-weight: 800;
+  margin-right: 0.4em;
+}
+
+section.ingredients li.star{
+  list-style: none;
+}
+
+/* サブリスト */
+section.ingredients li.sub-ingredients > ul{
+  margin-top: 8px;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 3px solid var(--border);
+}
+
+section.ingredients li.sub-ingredients > ul li{
+  font-weight: 500;
+  color: #4b5563;
+}
+
+section.ingredients li.sub-ingredients{
+  margin-top: 10px;
+  font-weight: 600; 
+}
+
+/* ========== instructions (numbered steps) ========== */
+section.instructions ol{
+  list-style: decimal;
+}
+
+/* ========== tips ========== */
+.tips ul {
+  list-style: disc;
+}
+
+.tips li {
+  margin-bottom: 0.5rem;
+}
+
+/* ========== comments ========== */
+section:last-of-type > div{
+  margin-top: 20px;
+}
+
+section:last-of-type > div p{
+  margin: 6px 0;
+}
+
+section:last-of-type > div p:last-child{
+  color: var(--muted);
+}
+
+/* ========== responsive ========== */
+@media (max-width: 520px){
+  article{
+    margin: 18px auto;
+    padding: 18px 16px;
+  }
+  h1{ font-size: 24px; }
+}
+
+/* ========== index (recipe list) ========== */
+
+article.index .lead {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.recipe-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recipe-list li {
+  margin: 14px 0;
+}
+
+.recipe-list a {
+  display: block;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  text-decoration: none;
+  color: inherit;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.recipe-list h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  padding-left: 0;
+}
+
+.recipe-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
