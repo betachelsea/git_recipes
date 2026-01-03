@@ -223,3 +223,9 @@ article.index .lead {
 .back-link:hover {
   text-decoration: underline;
 }
+
+/* ========== レシピ画像 ========== */
+
+.recipe-image {
+    max-width: 300px;
+}
