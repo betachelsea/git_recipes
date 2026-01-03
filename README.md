@@ -1,8 +1,7 @@
 # Git・Pull Request 活用プラクティス
 
 コーディングを進めるにあたり、Git・Pull Requestの活用方法を学ぶための練習用リポジトリです。
-課題1・2 の回答は、FBCの提出物のページにコメントとして記載してください。
-課題3 の回答は、Pull Requestとして作成し、URLを提出してください。
+
 
 ## 課題1: Pull Request の問題点を発見する
 
@@ -16,10 +15,41 @@ https://github.com/fjordllc/git_recipes に用意してある2件のPull Request
 
 「肉じゃが」のレシピに対して、次のような意見が挙がったので、対応することになりました。
 このリポジトリをForkして、自身のリポジトリにて下記を解決する Pull Request を作成してください。
-(提出方法の参考は[こちら](https://github.com/fjordllc/bug_reversi?tab=readme-ov-file#%E6%8F%90%E5%87%BA%E6%96%B9%E6%B3%95))
 今回のcommitの際には、1変更1commitの粒度で対応してください。
 
 - 肉じゃがの写真が大きすぎるので、最大の横幅を 300px になるように制限する
 - 「白滝」の表記がわかりにくいので、「しらたき」に変更する
 - ポイントの記載sectionに `class="tips"` を適用する
 
+
+# 補足・提出方法
+
+## 課題1・2
+
+FBCの提出物のページに回答を記載してください。
+
+## 課題3
+
+下記の方法で作成したPull RequestのURLを提出してください。
+
+1. 右上の Fork ボタンを押してください。
+2. #{自分のアカウント名}/git_recipes が作成されます。
+3. 作業PCの任意の作業ディレクトリにて git clone してください。
+
+```
+$ git clone https://github.com/自分のアカウント名/git_recipes.git
+```
+
+4. ブランチを**main**ブランチから作ってください。例えば以下のようにします。
+
+```
+$ git switch -c fix_nikujyaga main
+```
+
+5. 課題で提示されている変更をcommitしてください。
+
+6. 完成したら、Pull Requestを作成し、URLを提出してください。
+Pull Requestの作成画面では、merge先として **自分自身のアカウントのgit_recipesリポジトリ** を指定してください。
+また、**作成したPull Requestは提出後に確認OKをもらうまでmergeのボタンを押さないでください。**
+![Pull Request作成画面](https://user-images.githubusercontent.com/2603449/153869536-822379da-6eb0-4d25-92e4-685632508831.png)
+※画像は別のリポジトリで試した例です。　　
