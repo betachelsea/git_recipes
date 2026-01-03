@@ -9,13 +9,6 @@
   --accent: #d97706;
 }
 
-*{ box-sizing: border-box; }
-
-html, body{
-  margin: 0;
-  padding: 0;
-}
-
 body{
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP",
                "Hiragino Sans", "Yu Gothic", sans-serif;

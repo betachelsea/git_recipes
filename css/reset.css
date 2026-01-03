@@ -113,18 +113,3 @@ img {
 [data-whatinput="touch"] *:focus {
   outline: none;
 }
-
-/*
-////////////////////////////////////////
-初期設定
-////////////////////////////////////////
-*/
-body {
-  padding: 32px 0;
-  color: #56564f;
-}
-
-article {
-  width: 640px;
-  margin: 0 auto;
-}
