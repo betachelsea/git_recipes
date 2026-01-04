@@ -193,6 +193,11 @@ article.index .lead {
   transition: transform .15s ease, box-shadow .15s ease;
 }
 
+.recipe-list a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
 .recipe-list h2 {
   margin: 0 0 6px;
   font-size: 18px;
