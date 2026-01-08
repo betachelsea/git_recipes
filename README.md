@@ -15,7 +15,8 @@ https://github.com/betachelsea/git_recipes/pull/2 のPull Requestについて、
 
 ## 課題3: 履歴の調べ方を確認する
 
-`recipes/teriyaki.html` 内の「しょうゆ」という表記は、以前は「醤油」と書かれていましたが、とある理由により漢字をひらくように変更されました。この変更が入った理由を、Gitの履歴から確認してください。
+`recipes/teriyaki.html` 内の「しょうゆ」という表記は、以前は「醤油」と書かれていましたが、とある理由により漢字をひらくように変更されました。
+この変更が入った理由を、GitHub上のBlameを使って探してください。
 
 ## 課題4: 実際によい Pull Request を作る体験をする
 
@@ -30,9 +31,13 @@ https://github.com/betachelsea/git_recipes/pull/2 のPull Requestについて、
 
 # 補足・提出方法
 
-## 課題1・2・3
+## 課題1・2
 
 FBCの提出物のページに回答を記載してください。
+
+## 課題3
+
+変更理由を示すcommitのURLを提出してください。
 
 ## 課題4
 
