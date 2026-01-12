@@ -145,7 +145,11 @@ section.instructions li::before{
 
 /* ========== comments ========== */
 section:last-of-type > div{
-  margin-top: 20px;
+  margin-top: 12px;
+  padding: 14px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f9fafb;
 }
 
 section:last-of-type > div p{
